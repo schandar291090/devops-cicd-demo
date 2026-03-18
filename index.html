@@ -1,10 +1,112 @@
-<html>
-  <head>
-    <title>Devops CICD Demo</title>
-  </head>
-  <body>
-    <h1>CI/CD Pipeline Demo</h1>
-    <p>Build Number: VERSION</p>
-    <p>Modified page</p>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Message for My Learners</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background: linear-gradient(135deg,#4facfe,#00f2fe);
+}
+
+.card{
+    background:white;
+    padding:40px;
+    border-radius:20px;
+    width:90%;
+    max-width:600px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+    animation:fadeIn 1.5s ease;
+}
+
+h1{
+    color:#333;
+    margin-bottom:10px;
+}
+
+h2{
+    color:#4facfe;
+    margin-top:0;
+}
+
+p{
+    font-size:18px;
+    line-height:1.6;
+    color:#555;
+}
+
+.footer{
+    margin-top:25px;
+    font-weight:bold;
+    color:#333;
+}
+
+button{
+    margin-top:20px;
+    padding:10px 20px;
+    border:none;
+    border-radius:8px;
+    background:#4facfe;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#0077ff;
+}
+
+@keyframes fadeIn{
+    from{opacity:0; transform:translateY(20px);}
+    to{opacity:1; transform:translateY(0);}
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="card">
+    <h1>🌟 Hello my dear Learners 🌟</h1>
+    <h2>A Special Message For You</h2>
+
+    <p>
+        Learning is a journey filled with curiosity, dedication, and growth.
+        I am truly proud of each one of you for your effort and passion.
+    </p>
+
+    <p>
+        Keep believing in yourself, keep exploring new ideas,
+        and never stop asking questions. Your future is bright,
+        and this is just the beginning of an amazing journey.
+    </p>
+
+    <p>
+        Wishing you success, happiness, and endless learning ahead!
+    </p>
+
+    <div class="footer">
+        — With best wishes ❤️
+    </div>
+
+    <button onclick="showMessage()">Click for Motivation</button>
+</div>
+
+<script>
+function showMessage(){
+    alert("Keep learning, keep growing, and never stop dreaming! 🚀");
+}
+</script>
+
+</body>
 </html>
